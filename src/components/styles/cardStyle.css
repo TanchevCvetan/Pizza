@@ -1,0 +1,17 @@
+.container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.card{
+    width:350px;
+    height: 350px;
+    background-color: brown;
+    text-align: center;
+    margin:10px;
+}
+.image img{
+    width: 98%;
+    height: 200px;
+    padding-top:1px;
+}

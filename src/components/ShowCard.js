@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchProducts } from "../actions/productActions";
 import { addToCart } from "../actions/cartActions";
-
+import cardStyle from "./styles/cardStyle.css";
 
 class ShowCard extends Component {
 
@@ -13,7 +13,7 @@ class ShowCard extends Component {
   render() {
     const productItems = this.props.products.map(product => {
       return (
-        <div key={product.id} className="ui card">
+        <div key={product.id} className="card">
           <div className="image">
             <img alt="Pizza" src={product.image} />
           </div>
@@ -33,7 +33,7 @@ class ShowCard extends Component {
       );
     });
 
-    return <div className="ui link cards">{productItems}</div>;
+    return <div className="container">{productItems}</div>;
   }
 }
 

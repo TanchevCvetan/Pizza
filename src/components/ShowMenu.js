@@ -3,6 +3,8 @@ import ShowCard from "./ShowCard";
 import Filter from "./Filter";
 import { connect } from "react-redux";
 import { fetchProducts } from "../actions/productActions";
+import styles from "./styles/styles.css";
+
 
 class ShowMenu extends Component {
   componentDidMount() {

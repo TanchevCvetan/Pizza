@@ -1,5 +1,24 @@
-/* .container{
+.nav{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
-} */
+    justify-content:space-evenly;
+}
+.logo{
+    font-size: 2em;
+}
+.menu-button{
+    text-decoration:none;
+    font-size: 1.2em;
+    color: black;
+}
+.filter{
+    display:flex;
+    justify-content:space-between;
+}
+.filter h4 {
+    margin-top: 
+}
+.dropdown{
+    margin-top:22px;
+}

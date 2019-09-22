@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchProducts } from "../actions/productActions";
 import { addToCart } from "../actions/cartActions";
-import cardStyle from "./styles/cardStyle.css";
+
 
 class ShowCard extends Component {
 

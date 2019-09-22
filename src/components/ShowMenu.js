@@ -3,7 +3,6 @@ import ShowCard from "./ShowCard";
 import Filter from "./Filter";
 import { connect } from "react-redux";
 import { fetchProducts } from "../actions/productActions";
-import styles from "./styles/styles.css";
 
 
 class ShowMenu extends Component {
@@ -16,7 +15,7 @@ class ShowMenu extends Component {
   
   render() {
     return (
-      <div className="container">
+      <div className="">
         <Filter />
         <hr />
         <ShowCard />

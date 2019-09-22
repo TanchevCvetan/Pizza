@@ -5,15 +5,12 @@ import { sortProducts } from "../actions/productActions";
 class Filter extends Component {
   render() {
     return (
-      <div className="ui grid container">
-        <div className="eight wide column">
-          <h5>{this.props.filteredProducts.length}:Products Found.</h5>
-        </div>
-        <div className="eight wide column">
+      <div className="filter">
+          <h4>{this.props.filteredProducts.length}:Products Found.</h4>
+        <div className="dropdown">
           <label>
            Order by
             <select
-                className="ui dropdown"
                 value={this.props.sort}
                 onChange={(e) => this.props.sortProducts(this.props.filteredProducts,e.target.value)}
             >

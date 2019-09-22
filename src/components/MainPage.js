@@ -5,18 +5,18 @@ class MainPage extends React.Component {
   render() {
     return (
       
-        <div className="ui menu container">
-          <div className="header item">Mario's Pizza</div>
-          <a className="item" href="/">Home</a>
-          <a onClick = {this.props.onClick} className="item" href="/menu">Menu</a>
-          <a className="item" href="/contact-us">Contact us</a>
+        <div className="nav">
+          <div className="logo">Mario's Pizza</div>
+          <a className="menu-button" href="/">Home</a>
+          <a onClick = {this.props.onClick} className="menu-button" href="/menu">Menu</a>
+          <a className="menu-button" href="/contact-us">Contact us</a>
 
           <Link to="/cart" className="ui button primary right floated item">
             <i className="shopping cart icon"></i>
             {this.props.cartItems.length === 0 ? (
-          "Cart is empty"
+          "Cart"
         ) : (
-          <div>Cart Items : {this.props.cartItems.length}</div>
+          <div>Cart: {this.props.cartItems.length}</div>
         )}
         </Link>
         </div>
